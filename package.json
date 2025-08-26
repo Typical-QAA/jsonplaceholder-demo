@@ -1,0 +1,26 @@
+{
+  "name": "jsonplaceholder-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --project=jsonplaceholder-api",
+    "test:ci": "npx playwright test --config=./environment/jsonplaceholder-api/playwright-configs/base-ci.config.js --project=jsonplaceholder-api",
+    "test:docs": "npx playwright test --project=jsonplaceholder-api --grep \"@docs\"",
+    "test:list:docs": "npx playwright test --project=jsonplaceholder-api --grep \"@docs\" --list",
+    "test:list:no-docs": "npx playwright test --project=jsonplaceholder-api --grep-invert \"@docs\" --list",
+    "html-report-open": "npx playwright show-report ./playwright-report/jsonplaceholder-api/html/local"
+  },
+  "keywords": [],
+  "author": "padd1er",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0",
+    "ajv": "^8.17.1"
+  },
+  "dependencies": {
+    "allure-playwright": "^3.3.3"
+  }
+}

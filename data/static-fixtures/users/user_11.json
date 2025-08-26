@@ -1,0 +1,16 @@
+{
+  "id": 11,
+  "name": "Test11Name Test011Surname",
+  "username": "Test11Username",
+  "email": "Test11Email@test.com",
+  "address": {
+    "street": "Test11 Street",
+    "suite": "Test11Apt. 11",
+    "city": "Test11City",
+    "zipcode": "111-1111",
+    "geo": { "lat": "-11.11", "lng": "11.11" }
+  },
+  "phone": "1-770-111-1111",
+  "website": "test11site.org",
+  "company": { "name": "Test11Company", "catchPhrase": "Test11 11 Test best", "bs": "test test11 11" }
+}
